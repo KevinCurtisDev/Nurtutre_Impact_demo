@@ -95,6 +95,34 @@ ul, li {
   white-space: nowrap;
 }
 
+/* Desktop navigation links */
+.nav-bar__links {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+.nav-bar__links li {
+  margin: 0;
+}
+
+.nav-bar__links a {
+  text-decoration: none;
+  color: #002105;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-bar__links a:hover {
+  background-color: #1a4131;
+  color: #fff;
+}
+
 /* Skip to main link (accessibility) */
 .skip-to-main {
   position: absolute;
@@ -265,6 +293,19 @@ ul, li {
 
   .nav-bar {
     padding: 0 15px;
+  }
+}
+
+/* Show desktop nav links and hide hamburger on larger screens */
+@media (min-width: 992px) {
+  .nav-bar__links {
+    display: flex;
+  }
+
+  .navigation__button,
+  .navigation__background,
+  .navigation__nav {
+    display: none;
   }
 }
 
@@ -586,6 +627,131 @@ a.intro__btn:active {
 
   .intro__buttons .intro__btn {
     text-align: center;
+  }
+}
+
+/* ----------------------------------------
+   HOW IT WORKS SECTION
+   ---------------------------------------- */
+
+.how-it-works {
+  background-color: #19241d;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.how-it-works__wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-it-works__headline {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.how-it-works__subheadline {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 60px;
+}
+
+.how-it-works__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.how-it-works__step {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 40px 30px;
+  position: relative;
+  text-align: center;
+}
+
+.how-it-works__number {
+  width: 60px;
+  height: 60px;
+  background-color: #1a4131;
+  border: 3px solid #8ec5a5;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.how-it-works__step-title {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.how-it-works__step-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.how-it-works__connector {
+  display: none;
+}
+
+.how-it-works__cta {
+  margin-top: 20px;
+}
+
+/* How It Works responsive - horizontal layout on desktop */
+@media (min-width: 768px) {
+  .how-it-works__steps {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .how-it-works__step {
+    flex: 1;
+    max-width: 320px;
+    padding: 40px 25px;
+  }
+
+  .how-it-works__connector {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: -22px;
+    width: 24px;
+    height: 3px;
+    background-color: #8ec5a5;
+  }
+
+  .how-it-works__step:last-child .how-it-works__connector {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .how-it-works__steps {
+    gap: 40px;
+  }
+
+  .how-it-works__step {
+    padding: 50px 30px;
+  }
+
+  .how-it-works__connector {
+    right: -42px;
+    width: 44px;
   }
 }
 

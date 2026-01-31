@@ -12,6 +12,7 @@
 <body>
   <!--Beginning of navigation section-->
   <div class="nav-bar">
+      <!-- Logo + Title together on the left -->
       <div class="nav-bar__left">
           <a href="index.html" class="nav-bar-brand">
               <img src="assets/main_img.png" alt="Nurture Impact Logo" class="nav-bar-brand__img">
@@ -20,6 +21,16 @@
               <h1>Nurture Impact</h1>
           </div>
       </div>
+
+      <!-- Desktop navigation links -->
+      <ul class="nav-bar__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="grant-applications.html">Grant Applications</a></li>
+        <li><a href="governance.html">Governance</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <!-- Skip link (hidden until focused) -->
       <a href="#intro" class="skip-to-main">skip to main content</a>
   </div>
     <div class="navigation">
@@ -32,12 +43,12 @@
         <ul class="navigation__list">        
           <li class="navigation__item"><a href="index.html" class="navigation__link">HOME</a></li>
           <li class="navigation__item"><a href="grant-applications.html" class="navigation__link">GRANT APPLICATIONS</a></li>
-          <li class="navigation__item"><a href="governance.html" class="navigation__link">GOVERNANCE PROGRAMME</a></li>
+          <li class="navigation__item"><a href="governance.html" class="navigation__link">GOVERNANCE</a></li>
           <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT</a></li>
         </ul>
       </nav>
     </div>
-  <!--End of navigation section-->
+    <!--End of navigation section-->
 
   <!-- Beginning of header section -->
   <header class="hero-grant">
@@ -46,7 +57,7 @@
       <h1 class="headline__main">Grant Application Masterclass Programme</h1>
       <h2 class="headline__sub">Leverage Our Expertise To Build Funding-Ready Applications</h2>
       <div class="hero__buttons">
-        <a href="#contact" class="btn--primary btn">GET IN TOUCH</a>
+        <a href="#modules" class="btn--primary btn">VIEW MODULES</a>
         <a href="#pricing" class="btn--secondary btn">VIEW PRICING</a>
       </div>
     </div>
@@ -75,7 +86,7 @@
     <!-- End of intro section -->
 
     <!-- Who Is This For section -->
-    <section class="why-section" id="who">
+    <section class="pricing-section" id="who">
       <div class="why__wrapper">
         <h2 class="why__headline">Who Is This For?</h2>
         <p class="why__subheadline">Designed for organisations at every stage of their funding journey</p>
@@ -231,6 +242,96 @@
       </div>
     </section>
     <!-- End of modules section -->
+
+        <!-- Format Options Section -->
+    <section class="pricing-section" id="formats">
+      <div class="why__wrapper">
+        <h2 class="why__headline">Flexible Programme Formats</h2>
+        <p class="why__subheadline">Choose the delivery method that works for your organisation</p>
+
+        <div class="why__grid">
+          <div class="why__card">
+            <div class="why__icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="32" cy="32" r="28" fill="none" stroke="#1e4d3a" stroke-width="4"/>
+                <path d="M32 12 v20 h16" stroke="#1e4d3a" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">One-Off Masterclasses</h3>
+            <p class="why__card-text">2–3 hour focused sessions on specific topics. Ideal for addressing immediate needs.</p>
+          </div>
+
+          <div class="why__card">
+            <div class="why__icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="16" width="48" height="36" rx="4" fill="none" stroke="#1e4d3a" stroke-width="4"/>
+                <line x1="8" y1="28" x2="56" y2="28" stroke="#1e4d3a" stroke-width="4"/>
+                <line x1="20" y1="16" x2="20" y2="12" stroke="#1e4d3a" stroke-width="4" stroke-linecap="round"/>
+                <line x1="44" y1="16" x2="44" y2="12" stroke="#1e4d3a" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">Full-Day Workshops</h3>
+            <p class="why__card-text">Immersive deep-dives combining multiple modules with practical exercises.</p>
+          </div>
+
+          <div class="why__card">
+            <div class="why__icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="32" cy="20" r="10" fill="none" stroke="#1e4d3a" stroke-width="4"/>
+                <circle cx="16" cy="44" r="8" fill="none" stroke="#1e4d3a" stroke-width="4"/>
+                <circle cx="48" cy="44" r="8" fill="none" stroke="#1e4d3a" stroke-width="4"/>
+                <line x1="26" y1="28" x2="20" y2="36" stroke="#1e4d3a" stroke-width="3"/>
+                <line x1="38" y1="28" x2="44" y2="36" stroke="#1e4d3a" stroke-width="3"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">Board Retreats</h3>
+            <p class="why__card-text">Tailored off-site programmes for team building and strategic governance planning.</p>
+          </div>
+
+          <div class="why__card">
+            <div class="why__icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="12" y="12" width="40" height="40" rx="6" fill="none" stroke="#1e4d3a" stroke-width="4"/>
+                <polyline points="20,28 28,36 44,20" fill="none" stroke="#1e4d3a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">Accredited Programme</h3>
+            <p class="why__card-text">Complete 6–10 module certification pathway with formal recognition.</p>
+          </div>
+
+          <div class="why__card">
+            <div class="why__icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="12" y="8" width="40" height="48" rx="4" fill="none" stroke="#1e4d3a" stroke-width="4"/>
+                <circle cx="32" cy="44" r="4" fill="#1e4d3a"/>
+                <line x1="20" y1="20" x2="44" y2="20" stroke="#1e4d3a" stroke-width="3"/>
+                <line x1="20" y1="28" x2="44" y2="28" stroke="#1e4d3a" stroke-width="3"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">Online Blended Learning</h3>
+            <p class="why__card-text">Flexible mix of live virtual sessions and self-paced online content.</p>
+          </div>
+
+          <div class="why__card">
+            <div class="why__icon">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="32" cy="16" r="8" fill="none" stroke="#1e4d3a" stroke-width="4"/>
+                <path d="M20 56 v-16 a12 12 0 0 1 24 0 v16" fill="none" stroke="#1e4d3a" stroke-width="4"/>
+                <line x1="32" y1="40" x2="32" y2="52" stroke="#1e4d3a" stroke-width="4"/>
+                <line x1="26" y1="46" x2="38" y2="46" stroke="#1e4d3a" stroke-width="4"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">Train-the-Trainer</h3>
+            <p class="why__card-text">Build internal capacity for local development companies and networks.</p>
+          </div>
+        </div>
+
+        <div class="why__cta">
+          <a href="#contact" class="why__cta-link">Discuss Your Needs</a>
+        </div>
+      </div>
+    </section>
+    <!-- End of format options section -->
 
     <!-- Learning Outcomes section -->
     <section class="outcomes-section" id="outcomes">
