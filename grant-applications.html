@@ -12,7 +12,6 @@
 <body>
   <!--Beginning of navigation section-->
   <div class="nav-bar">
-      <!-- Logo + Title together on the left -->
       <div class="nav-bar__left">
           <a href="index.html" class="nav-bar-brand">
               <img src="assets/main_img.png" alt="Nurture Impact Logo" class="nav-bar-brand__img">
@@ -30,7 +29,6 @@
         <li><a href="about.html">About</a></li>
       </ul>
 
-      <!-- Skip link (hidden until focused) -->
       <a href="#intro" class="skip-to-main">skip to main content</a>
   </div>
     <div class="navigation">
@@ -48,16 +46,16 @@
         </ul>
       </nav>
     </div>
-    <!--End of navigation section-->
+  <!--End of navigation section-->
 
   <!-- Beginning of header section -->
-  <header class="hero-grant">
+  <header class="hero-header">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1 class="headline__main">Grant Application Masterclass Programme</h1>
-      <h2 class="headline__sub">Leverage Our Expertise To Build Funding-Ready Applications</h2>
+      <h2 class="headline__sub">Build Funding-Ready Applications with Insider Expertise</h2>
       <div class="hero__buttons">
-        <a href="#modules" class="btn--primary btn">VIEW MODULES</a>
+        <a href="#contact" class="btn--primary btn">GET IN TOUCH</a>
         <a href="#pricing" class="btn--secondary btn">VIEW PRICING</a>
       </div>
     </div>
@@ -79,14 +77,14 @@
           <a href="#modules" class="intro__btn">View Programme Modules</a>
         </div>
         <div class="intro__image-container">
-          <img src="assets/funding.png" alt="Participants in a grant writing workshop" class="intro__image">
+          <img src="assets/workshop_2.png" alt="Participants in a grant writing workshop" class="intro__image">
         </div>
       </section>
     </div>
     <!-- End of intro section -->
 
     <!-- Who Is This For section -->
-    <section class="pricing-section" id="who">
+    <section class="why-section" id="who">
       <div class="why__wrapper">
         <h2 class="why__headline">Who Is This For?</h2>
         <p class="why__subheadline">Designed for organisations at every stage of their funding journey</p>
@@ -139,95 +137,321 @@
       <div class="events__container">
         <h2 class="events__heading">Programme Modules</h2>
         
-        <div class="governance__grid">
+        <div class="accordion">
           
           <!-- Module 1 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 1</div>
-            <div class="governance__card-content">
-              <h3>Understanding the Funder & Appraisal Mindset</h3>
-              <p class="governance__card-purpose">How funders assess applications, what appraisers look for, and how to avoid common pitfalls.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-1" class="accordion__checkbox">
+            <label for="accordion-1" class="accordion__header">
+              <span class="accordion__number">1</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">Understanding the Funder & Appraisal Mindset</h3>
+                <p class="accordion__subtitle">How funders assess applications, what appraisers look for, and how to avoid common pitfalls.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Learning Outcome</h4>
+                  <p class="accordion__outcome-title">Understand how funders and appraisers assess applications</p>
+                  <p>Participants will gain insight into the criteria, scoring systems, and decision-making processes that determine which projects receive funding.</p>
+                </div>
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>How funders prioritise and score applications</li>
+                    <li>Common appraisal criteria and scoring rubrics</li>
+                    <li>Red flags that trigger concerns for reviewers</li>
+                    <li>The decision-making process from submission to approval</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Module 2 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 2</div>
-            <div class="governance__card-content">
-              <h3>Writing a Strong Needs Analysis</h3>
-              <p class="governance__card-purpose">Building an evidence-based case using local data, consultation, and funder-aligned rationale.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-2" class="accordion__checkbox">
+            <label for="accordion-2" class="accordion__header">
+              <span class="accordion__number">2</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">Writing a Strong Needs Analysis</h3>
+                <p class="accordion__subtitle">Building an evidence-based case using local data, consultation, and funder-aligned rationale.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Learning Outcome</h4>
+                  <p class="accordion__outcome-title">Build strong, evidence-based needs analyses</p>
+                  <p>Participants will learn how to source and present credible data so that their applications clearly demonstrate the local need and justify project investment.</p>
+                </div>
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>Sources of credible local and national data</li>
+                    <li>How to conduct meaningful consultations</li>
+                    <li>Aligning needs with funder priorities</li>
+                    <li>Presenting evidence clearly and persuasively</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Module 3 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 3</div>
-            <div class="governance__card-content">
-              <h3>Designing Activities That Score Highly</h3>
-              <p class="governance__card-purpose">Turning needs into clear, fundable, deliverable actions.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-3" class="accordion__checkbox">
+            <label for="accordion-3" class="accordion__header">
+              <span class="accordion__number">3</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">Designing Activities That Score Highly</h3>
+                <p class="accordion__subtitle">Turning needs into clear, fundable, deliverable actions.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Learning Outcome</h4>
+                  <p class="accordion__outcome-title">Design realistic, fundable activities</p>
+                  <p>Participants will practice translating identified needs into clear, structured actions that align with funder priorities and demonstrate feasibility.</p>
+                </div>
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>Linking activities directly to identified needs</li>
+                    <li>Making activities specific, measurable, and achievable</li>
+                    <li>Realistic timelines and resource allocation</li>
+                    <li>Demonstrating alignment with programme objectives</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Module 4 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 4</div>
-            <div class="governance__card-content">
-              <h3>Building a Transparent, Defensible Budget</h3>
-              <p class="governance__card-purpose">Eligible costs, value for money, cost realism, and linking budgets to activities.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-4" class="accordion__checkbox">
+            <label for="accordion-4" class="accordion__header">
+              <span class="accordion__number">4</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">Building a Transparent, Defensible Budget</h3>
+                <p class="accordion__subtitle">Eligible costs, value for money, cost realism, and linking budgets to activities.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Learning Outcome</h4>
+                  <p class="accordion__outcome-title">Prepare transparent, defensible budgets</p>
+                  <p>Participants will understand how to build budgets that show value for money, connect directly to planned activities, and withstand appraisal scrutiny.</p>
+                </div>
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>Understanding eligible and ineligible costs</li>
+                    <li>Demonstrating value for money</li>
+                    <li>Linking budget lines to specific activities</li>
+                    <li>Preparing for budget queries during appraisal</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Module 5 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 5</div>
-            <div class="governance__card-content">
-              <h3>Writing Outcomes, Outputs & Impact Statements</h3>
-              <p class="governance__card-purpose">How to demonstrate change, measure success, and align with programme indicators.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-5" class="accordion__checkbox">
+            <label for="accordion-5" class="accordion__header">
+              <span class="accordion__number">5</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">Writing Outcomes, Outputs & Impact Statements</h3>
+                <p class="accordion__subtitle">How to demonstrate change, measure success, and align with programme indicators.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Learning Outcome</h4>
+                  <p class="accordion__outcome-title">Write measurable outcomes and impact statements</p>
+                  <p>Participants will be equipped to define outputs, outcomes, and indicators that show meaningful change and support strong monitoring and evaluation.</p>
+                </div>
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>Distinguishing outputs, outcomes, and impact</li>
+                    <li>Setting SMART indicators</li>
+                    <li>Aligning with programme-level indicators</li>
+                    <li>Building in monitoring and evaluation from the start</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Module 6 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 6</div>
-            <div class="governance__card-content">
-              <h3>Governance, Capacity & Risk</h3>
-              <p class="governance__card-purpose">How to present organisational strength, track record, and risk mitigation.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-6" class="accordion__checkbox">
+            <label for="accordion-6" class="accordion__header">
+              <span class="accordion__number">6</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">Governance, Capacity & Risk</h3>
+                <p class="accordion__subtitle">How to present organisational strength, track record, and risk mitigation.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Learning Outcome</h4>
+                  <p class="accordion__outcome-title">Demonstrate governance, capacity, and risk management</p>
+                  <p>Participants will learn how to present organisational structures, policies, and risk controls that strengthen funder confidence in delivery ability.</p>
+                </div>
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>Presenting governance structures clearly</li>
+                    <li>Demonstrating organisational capacity</li>
+                    <li>Identifying and mitigating project risks</li>
+                    <li>Building funder confidence in delivery</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Module 7 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 7</div>
-            <div class="governance__card-content">
-              <h3>Writing a Business Plan for Social Enterprises</h3>
-              <p class="governance__card-purpose">A Pobal-aligned structure covering market need, financial projections, and social impact.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-7" class="accordion__checkbox">
+            <label for="accordion-7" class="accordion__header">
+              <span class="accordion__number">7</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">Writing a Business Plan for Social Enterprises</h3>
+                <p class="accordion__subtitle">A Pobal-aligned structure covering market need, financial projections, and social impact.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Learning Outcome</h4>
+                  <p class="accordion__outcome-title">Produce high-quality business plans for social enterprises</p>
+                  <p>Participants will understand how to structure a business plan that integrates financial projections, market need, and social impact in a clear, funder-aligned way.</p>
+                </div>
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>Business plan structure for social enterprises</li>
+                    <li>Market analysis and competitive positioning</li>
+                    <li>Financial projections and sustainability</li>
+                    <li>Integrating social impact throughout</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Module 8 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 8</div>
-            <div class="governance__card-content">
-              <h3>The Appraisal Lens: How Applications Are Reviewed</h3>
-              <p class="governance__card-purpose">A high-level, ethical explanation of how appraisers assess clarity, consistency, feasibility, and evidence.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-8" class="accordion__checkbox">
+            <label for="accordion-8" class="accordion__header">
+              <span class="accordion__number">8</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">The Appraisal Lens: How Applications Are Reviewed</h3>
+                <p class="accordion__subtitle">A high-level, ethical explanation of how appraisers assess clarity, consistency, feasibility, and evidence.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Learning Outcome</h4>
+                  <p class="accordion__outcome-title">Improve funding readiness and organisational sustainability</p>
+                  <p>Participants will gain skills and tools that strengthen long-term planning, reduce reliance on ad-hoc funding, and improve organisational resilience.</p>
+                </div>
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>How appraisers read and score applications</li>
+                    <li>Assessing clarity, consistency, and coherence</li>
+                    <li>Evaluating feasibility and evidence</li>
+                    <li>Common weaknesses and how to address them</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Module 9 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 9</div>
-            <div class="governance__card-content">
-              <h3>Writing for Appraisers: Style, Structure & Clarity</h3>
-              <p class="governance__card-purpose">How to write in a way that improves readability and scoring.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-9" class="accordion__checkbox">
+            <label for="accordion-9" class="accordion__header">
+              <span class="accordion__number">9</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">Writing for Appraisers: Style, Structure & Clarity</h3>
+                <p class="accordion__subtitle">How to write in a way that improves readability and scoring.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>Writing for busy readers</li>
+                    <li>Structuring responses for clarity</li>
+                    <li>Avoiding jargon and vague language</li>
+                    <li>Using headings, bullets, and formatting effectively</li>
+                  </ul>
+                </div>
+                <div class="accordion__section">
+                  <h4>Tools & Takeaways</h4>
+                  <ul>
+                    <li>Writing style guide</li>
+                    <li>Before/after application examples</li>
+                    <li>Self-editing checklist</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Module 10 -->
-          <div class="governance__card">
-            <div class="governance__card-number">Module 10</div>
-            <div class="governance__card-content">
-              <h3>Final Review & Submission Checklist</h3>
-              <p class="governance__card-purpose">A step-by-step quality assurance process used by strong applicants.</p>
+          <div class="accordion__item">
+            <input type="checkbox" id="accordion-10" class="accordion__checkbox">
+            <label for="accordion-10" class="accordion__header">
+              <span class="accordion__number">10</span>
+              <div class="accordion__title-wrapper">
+                <h3 class="accordion__title">Final Review & Submission Checklist</h3>
+                <p class="accordion__subtitle">A step-by-step quality assurance process used by strong applicants.</p>
+              </div>
+              <span class="accordion__icon"></span>
+            </label>
+            <div class="accordion__content">
+              <div class="accordion__content-inner">
+                <div class="accordion__section">
+                  <h4>Core Content</h4>
+                  <ul>
+                    <li>Pre-submission quality assurance steps</li>
+                    <li>Checking for consistency and completeness</li>
+                    <li>Common last-minute errors to avoid</li>
+                    <li>Document preparation and submission tips</li>
+                  </ul>
+                </div>
+                <div class="accordion__section">
+                  <h4>Tools & Takeaways</h4>
+                  <ul>
+                    <li>Comprehensive submission checklist</li>
+                    <li>Quality assurance template</li>
+                    <li>Final review workflow</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -242,96 +466,6 @@
       </div>
     </section>
     <!-- End of modules section -->
-
-        <!-- Format Options Section -->
-    <section class="pricing-section" id="formats">
-      <div class="why__wrapper">
-        <h2 class="why__headline">Flexible Programme Formats</h2>
-        <p class="why__subheadline">Choose the delivery method that works for your organisation</p>
-
-        <div class="why__grid">
-          <div class="why__card">
-            <div class="why__icon">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="32" cy="32" r="28" fill="none" stroke="#1e4d3a" stroke-width="4"/>
-                <path d="M32 12 v20 h16" stroke="#1e4d3a" stroke-width="4" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="why__card-title">One-Off Masterclasses</h3>
-            <p class="why__card-text">2–3 hour focused sessions on specific topics. Ideal for addressing immediate needs.</p>
-          </div>
-
-          <div class="why__card">
-            <div class="why__icon">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="8" y="16" width="48" height="36" rx="4" fill="none" stroke="#1e4d3a" stroke-width="4"/>
-                <line x1="8" y1="28" x2="56" y2="28" stroke="#1e4d3a" stroke-width="4"/>
-                <line x1="20" y1="16" x2="20" y2="12" stroke="#1e4d3a" stroke-width="4" stroke-linecap="round"/>
-                <line x1="44" y1="16" x2="44" y2="12" stroke="#1e4d3a" stroke-width="4" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="why__card-title">Full-Day Workshops</h3>
-            <p class="why__card-text">Immersive deep-dives combining multiple modules with practical exercises.</p>
-          </div>
-
-          <div class="why__card">
-            <div class="why__icon">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="32" cy="20" r="10" fill="none" stroke="#1e4d3a" stroke-width="4"/>
-                <circle cx="16" cy="44" r="8" fill="none" stroke="#1e4d3a" stroke-width="4"/>
-                <circle cx="48" cy="44" r="8" fill="none" stroke="#1e4d3a" stroke-width="4"/>
-                <line x1="26" y1="28" x2="20" y2="36" stroke="#1e4d3a" stroke-width="3"/>
-                <line x1="38" y1="28" x2="44" y2="36" stroke="#1e4d3a" stroke-width="3"/>
-              </svg>
-            </div>
-            <h3 class="why__card-title">Board Retreats</h3>
-            <p class="why__card-text">Tailored off-site programmes for team building and strategic governance planning.</p>
-          </div>
-
-          <div class="why__card">
-            <div class="why__icon">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="12" y="12" width="40" height="40" rx="6" fill="none" stroke="#1e4d3a" stroke-width="4"/>
-                <polyline points="20,28 28,36 44,20" fill="none" stroke="#1e4d3a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h3 class="why__card-title">Accredited Programme</h3>
-            <p class="why__card-text">Complete 6–10 module certification pathway with formal recognition.</p>
-          </div>
-
-          <div class="why__card">
-            <div class="why__icon">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="12" y="8" width="40" height="48" rx="4" fill="none" stroke="#1e4d3a" stroke-width="4"/>
-                <circle cx="32" cy="44" r="4" fill="#1e4d3a"/>
-                <line x1="20" y1="20" x2="44" y2="20" stroke="#1e4d3a" stroke-width="3"/>
-                <line x1="20" y1="28" x2="44" y2="28" stroke="#1e4d3a" stroke-width="3"/>
-              </svg>
-            </div>
-            <h3 class="why__card-title">Online Blended Learning</h3>
-            <p class="why__card-text">Flexible mix of live virtual sessions and self-paced online content.</p>
-          </div>
-
-          <div class="why__card">
-            <div class="why__icon">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="32" cy="16" r="8" fill="none" stroke="#1e4d3a" stroke-width="4"/>
-                <path d="M20 56 v-16 a12 12 0 0 1 24 0 v16" fill="none" stroke="#1e4d3a" stroke-width="4"/>
-                <line x1="32" y1="40" x2="32" y2="52" stroke="#1e4d3a" stroke-width="4"/>
-                <line x1="26" y1="46" x2="38" y2="46" stroke="#1e4d3a" stroke-width="4"/>
-              </svg>
-            </div>
-            <h3 class="why__card-title">Train-the-Trainer</h3>
-            <p class="why__card-text">Build internal capacity for local development companies and networks.</p>
-          </div>
-        </div>
-
-        <div class="why__cta">
-          <a href="#contact" class="why__cta-link">Discuss Your Needs</a>
-        </div>
-      </div>
-    </section>
-    <!-- End of format options section -->
 
     <!-- Learning Outcomes section -->
     <section class="outcomes-section" id="outcomes">

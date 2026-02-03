@@ -1330,6 +1330,20 @@ a.intro__btn:active {
   margin-bottom: 0;
 }
 
+.accordion__section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin: 0 0 8px 0;
+  text-align: left;
+}
+
+.accordion__outcome-title {
+  font-weight: 600;
+  color: #0f3325;
+  margin-bottom: 8px;
+}
+
 /* Accordion open state */
 .accordion__checkbox:checked + .accordion__header {
   background-color: #f0f5f2;
